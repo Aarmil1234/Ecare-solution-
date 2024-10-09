@@ -1,0 +1,411 @@
+@font-face {
+    font-family: 'my-font';
+    src: url('Gilroy-Light.ttf');
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'my-font', sans-serif;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* --- Header --- */
+header {
+    background: #000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 15vh;
+    padding: 10px 50px;
+}
+
+.menu img, 
+.logo img, 
+.grp-icons img {
+    cursor: pointer;
+}
+
+.menu img {
+    height: 30px;
+}
+
+.logo img {
+    height: 80px;
+}
+
+.grp-icons {
+    display: flex;
+    align-items: center;
+}
+
+.grp-icons img {
+    padding: 0 10px;
+    height: 30px;
+}
+
+/* --- Hero Section --- */
+.hero-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background: #000;
+    color: #fff;
+}
+
+.hero-image .left-side {
+    flex: 1;
+    max-width: 50%;
+}
+
+.hero-image .left-side img {
+    width: 100%;
+    height: auto;
+}
+
+.hero-image .right-side {
+    flex: 1;
+    max-width: 50%;
+    padding: 20px;
+}
+
+.hero-image h5 {
+    font-size: 30px;
+    color: #555;
+}
+
+.hero-image h3 {
+    text-transform: uppercase;
+    color: #F5F5F5;
+    font-size: 52px;
+    margin: 10px 0;
+    font-weight: 100;
+}
+
+.hero-image h2,
+.hero-image h2 span {
+    text-transform: uppercase;
+    font-weight: 100;
+    font-size: 128px;
+    color: #F5F5F5;
+}
+
+.hero-image h2 span {
+    color: #B98F60;
+}
+
+.hero-image button {
+    padding: 18px 43px;
+    font-size: 16px;
+    background-color: #B98F60;
+    color: #0C1011;
+    border-radius: 25px;
+    cursor: pointer;
+    font-weight: 800;
+}
+
+.hero-image button:hover {
+    background-color: #e4a55b;
+}
+
+/* --- Product Section --- */
+.product-container {
+    padding: 40px 0;
+}
+
+.product-container .heading {
+    text-align: center;
+}
+
+.product-container .heading h6 {
+    color: #0C1011;
+    font-size: 48px;
+    padding: 40px 20px;
+    font-weight: normal;
+}
+
+.product-container .heading p {
+    font-size: 15px;
+    padding: 0 40px;
+    color: #333333;
+}
+
+.product-container .off-container {
+    display: flex;
+    padding: 0 150px;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.off-container .content {
+    max-width: 200px;
+}
+
+.off-container .content h4 {
+    font-size: 37px;
+    padding: 20px 0;
+}
+
+.off-container .content p {
+    font-size: 19px;
+    padding: 20px 0;
+    line-height: 30px;
+}
+
+.off-container .content span {
+    color: #B98F60;
+    font-weight: 600;
+    font-size: 21px;
+    cursor: pointer;
+}
+
+.off-container .content span:hover {
+    border-bottom: 2px solid #B98F60;
+}
+
+/* --- Slider Base --- */
+.slider-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.3s ease-in-out;
+}
+
+.card {
+    min-width: 25%; 
+    padding: 10px;
+    box-sizing: border-box;
+    background-color: #fff;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 100%;
+    height: auto;
+}
+
+.card h2 {
+    font-size: 24px;
+    margin: 10px 0;
+}
+
+.card p {
+    font-size: 16px;
+    color: #555;
+}
+
+/* --- Slider Navigation --- */
+.slider-nav {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.slider-nav button {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 24px;
+    color: red;
+}
+
+.slider-nav button:hover {
+    color: #b98f60;
+}
+
+.buttons{
+    display: flex;
+    justify-content: center;
+}
+.prev, .next{
+    cursor: pointer;
+    padding: 5px 10px;
+    background: #fff;
+    border-radius: 50%;
+    margin: 40px 20px;
+}
+.company-snippet {
+    height: 40vh; 
+    min-height: 400px;
+    object-fit: cover; 
+    background-repeat: no-repeat;
+    background-size: cover; 
+    background-position: center;
+    background-image: url('imgs/Group 451.png');
+}
+
+.featured-products{
+    display: flex;
+    flex-direction: column;
+    padding: 40px 80px;
+}
+.featured-products .product-content{
+    text-align: center;
+    h2{
+        font-size: 54px;
+        text-transform: capitalize;
+    }
+    p{
+        padding: 20px 0;
+        font-size: 19px;
+    }
+}
+.featured-products .product-section{
+    display: flex;
+    flex-direction: column;
+    h4{
+        text-transform: uppercase;
+        font-size: 20px;
+    }
+}
+.featured-products .product-section .all-products{
+    padding: 10px 0;
+    display: flex;
+    .card{
+        min-width: 10%;
+        box-shadow: none;
+    }
+    .card img{
+        object-fit: cover;
+        aspect-ratio: 4/5;
+    }
+}
+
+
+/* --- Media Queries --- */
+
+@media (max-width: 1200px) {
+    .card {
+        min-width: 33.33%; 
+    }
+
+    .hero-image h2 {
+        font-size: 96px;
+    }
+
+    .hero-image h3 {
+        font-size: 40px;
+    }
+    
+}
+
+
+@media (max-width: 768px) {
+    .card {
+        min-width: 50%; 
+    }
+
+    header {
+        padding: 10px 20px;
+    }
+    .menu img{
+        height: 20px;
+    }
+    .logo img {
+        height: 60px;
+    }
+    .grp-icons img{
+        height: 20px;
+        padding: 0 5px;
+    }
+
+    .hero-image {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .hero-image .left-side,
+    .hero-image .right-side {
+        max-width: 100%;
+    }
+
+    .hero-image h2 {
+        font-size: 70px;
+    }
+
+    .hero-image h3 {
+        font-size: 30px;
+    }
+
+    .hero-image button {
+        padding: 12px 30px;
+    }
+
+    .product-container .off-container {
+        padding: 0 50px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .product-container .heading h6 {
+        font-size: 28px;
+    }
+
+    .product-container .heading p {
+        font-size: 14px;
+    }
+    .company-snippet {
+        height: 20vh;
+    }
+    .featured-products .all-products{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+/* --- Extra Small Screens (Phones) --- */
+@media (max-width: 480px) {
+    .card {
+        min-width: 100%;
+    }
+
+    header {
+        padding: 10px 10px;
+        align-items: center;
+    }
+
+    .mobile-menu img {
+        height: 25px;
+    }
+
+    .grp-icons {
+        padding: 10px 0;
+        justify-content: center;
+    }
+
+    .hero-image h2 {
+        font-size: 55px;
+    }
+
+    .hero-image h3 {
+        font-size: 20px;
+    }
+
+    .hero-image button {
+        padding: 10px 20px;
+    }
+
+    .product-container .heading h6 {
+        font-size: 22px;
+    }
+
+    .product-container .heading p {
+        font-size: 12px;
+    }
+    
+}
